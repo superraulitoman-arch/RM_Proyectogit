@@ -1,0 +1,28 @@
+# Normalizar finales de línea para todos los archivos de texto
+* text=auto eol=lf
+
+# Archivos Java: siempre como texto, con diffs legibles
+*.java text diff=java
+
+# Configurar el comportamiento de archivos de construcción o dependencias
+*.jar binary
+*.class binary
+*.war binary
+*.ear binary
+
+# Archivos de configuración (mantener como texto)
+*.xml text
+*.properties text
+*.yml text
+*.yaml text
+*.json text
+*.gradle text
+*.md text
+
+# Archivos de script (mantener permisos ejecutables)
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Ignorar diferencias en archivos generados automáticamente
+*.log -diff
+*.out -diff
